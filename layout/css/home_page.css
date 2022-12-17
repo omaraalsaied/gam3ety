@@ -1,0 +1,947 @@
+/*************** initalize *******************/
+body{
+    margin: 0 ;
+}
+
+:root {
+    --main_color: #E30813;
+    --white_color: #fff;
+    --black_color: #000;
+    --font_cairo: "Cairo", sans-serif;
+}
+
+
+/*=================== Start Header ===================*/
+header{
+    height: auto;
+    background-color: #000;
+    width: 100%;
+    overflow: hidden;
+}
+header .overlay{
+    height: 100%;
+    width: 100%;
+    background-image: url("../../img/water2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 999;
+    position: relative
+}
+
+header .overlay .shape1 {
+    position: absolute;
+    left: 45%;
+    top: 10%;
+    z-index: -1;
+    /* animation: animationFramesOne 10s infinite linear; */
+}
+header .overlay .shape2 {
+    position: absolute;
+    left: 10%;
+    top: 45%;
+    z-index: -1;
+    /* animation: animationFramesSecond 10s infinite linear; */
+}
+header .overlay .shape3 {
+    position: absolute;
+    left: 80%;
+    top: 10%;
+    z-index: -1;
+    /* animation: animationFramesOne 10s infinite linear; */
+}
+header .overlay .shape4 {
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    z-index: -1;
+    /* animation: animationFramesSecond 10s infinite linear; */
+}
+header .overlay .shape5 {
+    position: absolute;
+    left: 90%;
+    top: 70%;
+    z-index: -1;
+    /* animation: animationFramesOne 10s infinite linear; */
+}
+header .overlay .shape6 {
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    z-index: -1;
+    /* animation: animationFramesSecond 10s infinite linear; */
+}
+header .overlay .shape7 {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    z-index: -1;
+    /* animation: animationFramesOne 10s infinite linear; */
+}
+header .overlay .shape8 {
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    z-index: -1;
+    /* animation: animationFramesSecond 10s infinite linear; */
+}
+
+header .header_images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .header_images img{
+    width: 25% !important;
+    margin: 20px;
+}
+header .header_content{
+    direction: rtl;
+    text-align: right;
+    padding-right: 100px;
+    padding-bottom: 30px;
+}
+header .header_content h5{
+    font-family: 'Cairo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.3333px;
+    line-height: 21px;
+    color: #9C9C9C;
+}
+header .header_content h3{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 69px;
+    color: #eee;
+    margin: 30px 0px;
+}
+header .header_content p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+header .header_content .btns{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+header .header_content .btns a:first-of-type{
+    background: #E30813;
+    border-radius: 10px;
+    color: #fff;
+    height: 56px;
+    text-align: center;
+    width: 191px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    font-weight: 400;
+    line-height: 50px;
+    font-size: 18px;
+}
+header .header_content .btns a:last-of-type{
+    background: transparent;
+    border:2px solid rgb(227, 8, 19);
+    border-radius: 10px;
+    height: 56px;
+    text-align: center;
+    width: 191px;
+    line-height: 50px;
+    color:#fff;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    font-weight: 400;
+    font-size: 18px
+}
+header .header_content .btns a:first-of-type:hover{
+    box-shadow: rgba(227, 8, 19, 0.8) 0px 0px 29px 5px;
+}
+header .header_content .btns a:last-of-type:hover{
+    background: #E30813;
+    color:#fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    box-shadow: rgba(227, 8, 19, 0.8) 0px 0px 29px 5px;
+}
+
+header .header_content .counter{
+    text-align: center;
+}
+header .header_content .counter h3{
+    font-size: 4rem;
+    font-weight: 700;
+    color:#fff;
+    margin-bottom: 0px ;
+    font-family: 'Cairo', sans-serif;
+}
+header .header_content .counter p{
+    font-size:18px;
+    font-weight: 400;
+    color:var(--main_color);
+    font-family: 'Cairo', sans-serif;
+    
+}
+
+
+/*--------media queries----------*/
+@media(max-width:760px){
+    header .header_images img{
+        width: 30% !important;
+    }
+    header .header_content{
+        padding-right: 20px !important;
+        padding-left: 20px;
+    }
+}
+@media(max-width:500px){
+    header .header_content h3{
+        font-size: 35px;
+    }
+    header .header_content p{
+        font-size: 15px;
+    }
+    header .header_content .btns a:first-of-type{
+        width: 140px;
+        font-size: 15px;
+    }
+    header .header_content .btns a:last-of-type{
+        width: 145px;
+        font-size: 15px;
+    }
+}
+
+/*=================== End Header ===================*/
+
+
+
+
+/*=================== Start About ===================*/
+.about{
+    background-image: url("../../img/water2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 10px;
+}
+.about .about_content{
+    padding: 10px 20px;
+    text-align: right;
+    padding-right: 30px;
+}
+.about .about_content h2{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color:#000;
+    padding: 15px 0;
+    padding-top: 25px;
+    direction: rtl;
+}
+.about .about_content h3{
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color:#000;
+    padding: 10px 0;
+    line-height: 42px;
+    padding-bottom: 0;
+}
+.about .about_content strong{
+    display: inline-block;
+}
+.about .about_content .under_line{
+    display: block;
+    margin: auto;
+    width: 170px;
+    margin-bottom: 20px;
+}
+.about .about_content .about_items{
+    direction: rtl;
+    padding: 10px 0;
+}
+.about .about_content .about_items img{
+    display: inline-block;
+    margin-left: 10px;
+}
+.about .about_content .about_items p{
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color:#000;
+    display: inline-block;
+    padding-right: 10px;
+}
+.about .about_content .about_page_btn{
+    width: 191px;
+    height: 56px;
+    background: #E30813;
+    border-radius: 10px;
+    margin:20px 0;
+    float: right;
+    font-family: 'Cairo', sans-serif;
+    font-style: normal;
+    border: unset;
+    transition:all .3s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.about .about_content .about_page_btn a{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
+    color: #fff;
+}
+.about .about_content .about_page_btn:hover{
+    box-shadow: rgba(227, 8, 19, 0.8) 0px 0px 29px 5px;
+ 
+}
+
+
+.about .about_image{
+    padding: 10px 20px;
+    position: relative;
+}
+.about .about_image img{
+    display: block;
+    width: 85%;
+    margin: auto;
+}
+.about .about_image .statistics{
+    position: absolute;
+    background-color: #fff !important;
+    border-radius: 50%;
+    width:144px;
+    height:144px;
+    top: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .about_image .statistics div{
+    position: absolute;
+    font-family: 'Cairo', sans-serif;
+    border: 1px dashed #efefef;
+    border-radius: 50%;
+    text-align: center;
+    width:108px;
+    height:108px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222;
+    background-color: #fff !important;
+    line-height: 20px;
+    padding-top: 31px;
+}
+
+/*=================== End About ===================*/
+
+
+
+
+/*=================== Start Services ===================*/
+.services{
+    background-color: #000;
+}
+.services .overlay{
+    padding-top:30px;
+    padding-bottom:30px;
+    background-image: url("../../img/water2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services .service_header{
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    color:#fff;
+    padding-top: 20px;
+}
+.services .line{
+    display: block;
+    margin: auto;
+}
+.services .services_image{
+    width: 90%;
+    display: block;
+    margin:auto
+}
+.services .service_name{
+    font-weight: 700;
+    font-size: 30px;
+    color:#fff;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.services .service_desc{
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(156, 156, 156, 0.65);
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+}
+.services .service_num{
+    font-weight: 700;
+    font-size: 30px;
+    color: rgba(156, 156, 156, 0.45);
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    padding-top:20px;
+}
+/*=================== End Services ===================*/
+
+
+
+/*=================== Start how to work ===================*/
+.how_to_work{
+    background-image: url("../../img/water2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+}
+.how_to_work .how_header{
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    color:#000;
+    padding: 10px 0;
+    line-height: 42px;
+    padding-bottom: 0;
+    text-align: center;
+}
+.how_to_work .how_header .under_line{
+    display: block;
+    margin: auto;
+    width: 110px;
+    position: relative;
+    left: -40px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+.how_to_work .how_to_items{
+    background-color: #000;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    width: 90%;
+}
+.how_to_work .how_to_items .how_overlay{
+    background-image: url("../../img/water2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    text-align: center;
+}
+.how_to_work .how_to_items .how_overlay .item_image{
+    width: 140px;
+    height: 140px;
+    background-color: #fff;
+    border: 1px solid #E30813;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -85px;
+    margin-bottom: 30px;
+}
+.how_to_work .how_to_items .how_overlay h3{
+    font-weight: 700;
+    font-size: 28px;
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    color: #DFDFDF;
+    padding-bottom: 30px;
+}
+.how_to_work .how_to_items .how_overlay p{
+    font-weight: 400;
+    font-size: 18px;
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    color: #DFDFDF;
+    padding-bottom: 35px;
+}
+/*=================== End how to work ===================*/
+
+
+/*=================== Start new videos ===================*/
+.new_videos{
+    background-color: #000;
+}
+.new_videos .overlay{
+    background-image: url("../../img/water2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+.new_videos .overlay .new_videos_header{
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    color:#fff;
+    padding: 10px 0;
+    line-height: 42px;
+    padding-bottom: 0;
+    text-align: center;
+}
+.new_videos .overlay .new_videos_header .under_line{
+    display: block;
+    margin: auto;
+    width: 110px;
+    position: relative;
+    left: -40px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+.new_videos .overlay .filter_btns{
+    width: 80%;
+    direction: rtl;
+    margin: auto;
+}
+.new_videos .overlay .filter_btns button{
+    background: transparent;
+    border: unset;
+    font-weight: 700;
+    font-size: 18px;
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+    position: relative;
+    transition: all .3s ease-in-out;
+
+}
+.new_videos .overlay .filter_btns .mixitup-control-active{
+    color: #E30813 !important;
+
+}
+.new_videos .overlay .filter_btns .mixitup-control-active::before{
+    content: "";
+    width: 0;
+    
+    position: absolute;
+    bottom: -13px;
+    right: 50px;
+    border: 3px solid #E30813;
+    border-radius: 10px;
+    background-color: #E30813;
+}
+.new_videos .overlay .videos_item{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #000;
+    direction: rtl;
+}
+.new_videos .overlay .videos_item .video_img{
+    width: 100%;
+    max-height: 280px;
+    min-height: 280px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+.new_videos .overlay .videos_item .video_info{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+
+}
+.new_videos .overlay .videos_item .doctor .doctor_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+
+    margin-left: 5px;
+}
+.new_videos .overlay .videos_item .doctor h4{
+    font-weight: 700;
+    font-size: 18px;
+    color:#fff;
+    font-family: 'Cairo', sans-serif;
+    display: inline-block;
+}
+
+.new_videos .overlay .videos_item .course_name p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    width: 88%;
+    line-height: 42px;
+    margin: auto;
+    color:#fff;
+    font-family: 'Cairo', sans-serif;
+    background: rgba(227, 8, 19, 0.48);
+    border-radius: 10px;
+}
+.new_videos .overlay .videos_item .video_desc{
+    font-weight: 400;
+    font-size: 18px;
+    direction: rtl;
+    line-height: 29px;
+    color:#fff;
+    font-family: 'Cairo', sans-serif;
+}
+.new_videos .overlay .videos_item .video_time p{
+    font-weight: 400;
+    font-size: 14px;
+    direction: rtl;
+    color: rgba(156, 156, 156, 0.92);
+    font-family: 'Cairo', sans-serif;
+    text-align: right;
+    padding-top: 4px;
+}
+
+.new_videos .overlay .videos_item .submit_btn button{
+    text-decoration: none;
+    color:#fff !important;
+    width: 95%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    line-height: 37px;
+    border-radius: 10px;
+    background-color: #E30813;
+    transition: all .3s ease-in-out;
+}
+.new_videos .overlay .videos_item .submit_btn button:hover{
+    background: #E30813 !important;
+    box-shadow: rgba(227, 8, 19, 0.8) 0px 0px 29px 5px;
+    border: unset;
+}
+.new_videos .overlay .videos_item .price p{
+    font-weight: 700;
+    font-size: 20px;
+    color: #E30813;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    line-height: 37px;
+    text-align: center;
+}
+.new_videos .overlay .videos_item .price span{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+    color: rgba(156, 156, 156, 0.92);
+    text-decoration-line: line-through;
+    display: inline-block;
+    padding-left: 5px;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: center;
+}
+.new_videos .go_to_videos{
+    width: 220px;
+    /* height: 56px; */
+    background: transparent;
+    border-radius: 10px;
+    display: block;
+    margin: 30px auto;
+    margin-top: 30px;
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid #E30813;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+}
+.new_videos .go_to_videos:hover{
+    background: #E30813 !important;
+    box-shadow: rgba(227, 8, 19, 0.8) 0px 0px 29px 5px;
+}
+/*--------media queries----------*/
+@media(max-width:760px){
+    .new_videos .overlay .filter_btns{
+        width: 100%;
+    }
+}
+/*=================== End new videos ===================*/
+
+
+
+
+#water
+{
+    background-image: url("../../img/water2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+.section-thrid .item {
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .section-thrid .member {
+    direction: rtl;
+    font-family: "Cairo", sans-serif !important;
+    font-weight: 700;
+    font-size: 38px;
+    color: #000;
+    padding: 10px 0;
+    line-height: 42px;
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .section-thrid .member .under_line {
+    display: block;
+    margin: auto;
+    width: 110px;
+    position: relative;
+    left: -40px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+  }
+  .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+
+/*=================== Start Footer ===================*/
+footer{
+    background-color: #000;
+
+}
+footer .overlay{
+    height: 100%;
+    width: 100%;
+    background-image: url("../../img/water2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer .footer_info{
+    direction: rtl;
+}
+footer .footer_info img{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+}
+footer .footer_info h3{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #F8F7F7;
+    font-family: 'Cairo', sans-serif;
+    margin-bottom: 20px;
+}
+footer .footer_info .phone p{
+    display: inline-block;
+    color: rgba(156, 156, 156, 0.89);
+    direction:ltr
+}
+footer .footer_info .email{
+    margin-top:15px ;
+    margin-bottom:15px ;
+}
+footer .footer_info .email p{
+    display: inline-block;
+    color: rgba(179, 179, 179, 0.89);
+
+}
+footer .footer_info .social_icons{
+    margin-top:30px ;
+    margin-bottom:30px ;
+}
+footer .footer_info .social_icons i{
+    /* font-size: 35px; */
+    font-size: 55px;
+    transition:all .3s ease-in-out
+}
+footer .footer_info .social_icons a:first-child i:hover{
+    color:#0088cc !important;
+    transform:scale(1.3)
+}
+footer .footer_info .social_icons a:last-of-type i:hover{
+    color:#0f0 !important;
+    transform:scale(1.3)
+}
+/* footer .footer_info .social_icons a i:last-of-type:hover{
+    color:#0f0 !important;
+    transform:scale(1.3)
+} */
+footer .quick_links{
+    padding-right: 30px;
+}
+footer .quick_links h3{
+    font-family: 'Cairo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 42px;
+    color: #FFFFFF;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    direction: rtl;
+}
+footer .quick_links a{
+    display: block;
+    font-family: 'Cairo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 42px;
+    color: #9C9C9C;
+    direction: rtl;
+    padding: 10px 0;
+    transition: all .5s ease-in-out;
+}
+footer .quick_links a:hover{
+    font-size: 20px;
+    color:#fff;
+    padding-right: 8px;
+}
+
+
+/*--------media queries----------*/
+@media(max-width:750px){
+    footer{
+        text-align:center;
+    }
+    footer .quick_links{
+        padding-right:unset !important
+    }
+    footer .footer_info img{
+        margin:auto;
+        width:65% !important;
+    }
+    footer p{
+        padding:10px 20px
+    }
+}
+/*=================== End Footer ===================*/
+
+
+
+
+/*=================== Start Media Query ===================*/
+@media(max-width:700px){
+    .navbar .logo img{
+        width: 80px;
+    }
+    header .header_content h5{
+        font-size: 20.3333px;
+    }
+    header .header_content h3{
+        font-size: 28px !important;
+        line-height: 50px !important;
+        margin: 20px 0px;
+        font-weight: 700;
+    }
+    header .header_content p{
+        font-size: 13px !important;
+    }
+    header .header_content .btns{
+        margin-bottom: 20px;
+    }
+    header .header_content{
+    padding-bottom: 5px !important;
+    }
+    header .header_content .counter h3{
+        font-size: 3rem !important;
+    }
+    header .header_content .counter p{
+        font-size: 15px !important;
+        font-weight: 500 !important;
+    }
+    .about .about_content{
+        padding: 10px 10px;
+        text-align: right;
+    }
+    .about .about_content h2{
+        font-size: 20px;
+    }
+    .about .about_content h3{
+        font-size: 20px;
+    }
+    .about .about_content .under_line{
+        width: 110px;
+    }
+    .about .about_content .about_items p{
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .services .about_sec_content{
+        padding-top: 0px !important;
+        margin-top: -60px !important;
+    }
+    .services .service_name{
+        font-size: 22px;
+    }
+    .services .service_desc{
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .how_to_work .how_to_items .how_overlay h3{
+        font-size: 26px;
+        padding-bottom: 25px;
+    }
+    .how_to_work .how_to_items .how_overlay p{
+        font-weight: 500;
+        font-size: 15px;
+        padding-bottom: 28px;
+    }
+    .how_to_work{
+        padding-bottom: 0px !important;
+    }
+    .new_videos .overlay .new_videos_header{
+        font-size: 35px;
+    }
+    header .overlay .shape1{
+        left: 36%;
+        top: 3%;
+    }
+    header .overlay .shape2{
+        top: 49%;
+    }
+    header .overlay .shape3{
+        left: 77%;
+        top: 10%;
+    }
+    header .overlay .shape5{
+        left: 13%;
+        top: 71%;
+    }
+    header .overlay .shape6{
+        left: 59%;
+        top: 84%;
+    }
+    header .overlay .shape7{
+        left: 71%;
+        top: 68%;
+    }
+    header .overlay .shape8{
+        left: 77%;
+        top: 45%;
+    }
+}
+/*=================== End Media Query ===================*/
+

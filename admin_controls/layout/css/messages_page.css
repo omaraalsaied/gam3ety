@@ -1,0 +1,6 @@
+body{
+    font-family: 'Cairo', sans-serif !important;
+}
+.ui.card, .ui.cards>.card{
+    width: 100% !important;
+}

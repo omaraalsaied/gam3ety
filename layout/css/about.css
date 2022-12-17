@@ -1,0 +1,483 @@
+body{
+    margin: 0 ;
+}
+:root {
+    --main_color: #E30813;
+    --white_color: #fff;
+    --black_color: #000;
+    --font_cairo: "Cairo", sans-serif;
+}
+body{
+    font-family: 'Cairo', sans-serif !important;
+}
+h2,.instructors{
+    font-family: 'Cairo', sans-serif !important;
+}
+h2:last-of-type{
+    padding: 20px 0;
+}
+
+
+/*=================== Start Header ===================*/
+.header .navbar{
+    margin-bottom: 10px !important;
+}
+.header {
+    padding: 10px 0;
+    position: relative;
+    padding-bottom: 20px !important;
+}
+.about_header_title{
+    padding-top: 40px;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    padding-right: 20px;
+}
+
+#water
+{
+    background-image: url("../../img/water2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header h2
+{
+    color: #fff;
+}
+
+.header .navbar {
+    margin-bottom: 70px;
+}
+
+.header .imgs .shape1 {
+    position: absolute;
+    left: 81%;
+    top: 32%;
+    z-index: 99;
+}
+.header .imgs .shape2 {
+    position: absolute;
+    left: 65%;
+    top: 68%;
+    z-index: 99;
+}
+.header .imgs .shape3 {
+    position: absolute;
+    left: 50%;
+    top: 36%;
+    z-index: 99;
+}
+.header .imgs .shape4 {
+    position: absolute;
+    left: 40%;
+    top: 72%;
+    z-index: 99;
+}
+
+.header .imgs .shape5 {
+    position: absolute;
+    left: 30%;
+    top: 27%;
+    z-index: 99;
+}
+.header .shape7 {
+    position: absolute;
+    left: 66%;
+    top: 20%;
+    z-index: 99;
+}
+.header .shape8 {
+    position: absolute;
+    left: 17%;
+    top: 20%;
+    z-index: 99;
+}
+.header .shape9 {
+    position: absolute;
+    left: 51%;
+    top: 64%;
+    z-index: 99;
+}
+/*=================== End Header ===================*/
+
+  /*=================== Start About ===================*/
+  .section-first {
+    background-image: url("../../img/water2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 10px;
+  }
+  .section-first .about_content {
+    padding: 10px 20px;
+    text-align: right;
+    padding-right: 30px;
+  }
+  .section-first .about_content h2 {
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    padding: 15px 0;
+    padding-top: 25px;
+    direction: rtl;
+  }
+  .section-first .about_content h3 {
+    direction: rtl;
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #000;
+    padding: 10px 0;
+    line-height: 42px;
+    padding-bottom: 0;
+  }
+  .asection-firstbout .about_content strong {
+    display: inline-block;
+  }
+  .section-first .about_content .under_line {
+    display: block;
+    margin: auto;
+    width: 170px;
+    margin-bottom: 20px;
+  }
+  .section-first .about_content .about_items {
+    direction: rtl;
+    padding: 10px 0;
+  }
+  .section-first .about_content .about_items img {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .section-first .about_content .about_items p {
+    direction: rtl;
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #9c9c9c;
+    width: 80%;
+    display: inline-block;
+    padding-right: 10px;
+  }
+  .section-first .about_content .about_page_btn {
+    width: 191px;
+    height: 56px;
+    background: #e30813;
+    border-radius: 10px;
+    margin: 20px 0;
+    float: right;
+    font-family: "Cairo", sans-serif;
+    font-style: normal;
+    border: unset;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .section-first .about_content .about_page_btn a {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
+    color: #fff;
+  }
+  .section-first .about_content .about_page_btn:hover {
+    box-shadow: rgba(227, 8, 19, 0.8) 0px 0px 29px 5px;
+  }
+  
+  .section-first .about_image {
+    padding: 10px 20px;
+    position: relative;
+  }
+  .section-first .about_image img {
+    display: block;
+    width: 100%;
+    margin: 35px auto;
+  }
+  .section-first .about_image .statistics {
+    position: absolute;
+    background-color: #fff !important;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    top: 10%;
+    left: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-first .about_image .statistics div {
+    position: absolute;
+    font-family: "Cairo", sans-serif;
+    border: 3px dashed #efefef;
+    border-radius: 50%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222;
+    background-color: #fff !important;
+    line-height: 20px;
+    padding-top: 31px;
+  }
+  
+  /*=================== End About ===================*/
+.services{
+    background-color: #000;
+}
+.services .overlay{
+    background-image: url("../../img/water2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+}
+.services .overlay .service_item{
+    border: 1px solid #E30813;
+    border-radius: 10px;
+    padding: 20px;
+}
+.services .overlay .item_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .overlay .item_header p{
+    font-weight: 700;
+    font-size: 25px;
+    color: #E30813;
+    font-family: "Cairo", sans-serif;
+    text-align: center;
+}
+.services .overlay .item_img img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.services .overlay .service_item .desc{
+    font-weight: 400;
+    font-size: 18px;
+    color: #9C9C9C;
+    text-align: right;
+    direction: rtl;
+    padding: 15px 0;
+}
+  /*=================== End About ===================*/
+  .section-thrid .item {
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .section-thrid .member {
+    direction: rtl;
+    font-family: "Cairo", sans-serif !important;
+    font-weight: 700;
+    font-size: 38px;
+    color: #000;
+    padding: 10px 0;
+    line-height: 42px;
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .section-thrid .member .under_line {
+    display: block;
+    margin: auto;
+    width: 110px;
+    position: relative;
+    left: -40px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+  }
+  .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  
+
+/*=================== Start Footer ===================*/
+footer{
+    background-color: #000;
+
+}
+footer .overlay{
+    height: 100%;
+    width: 100%;
+    background-image: url("../../img/water2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer .footer_info{
+    direction: rtl;
+}
+footer .footer_info img{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+}
+footer .footer_info h3{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #F8F7F7;
+    font-family: 'Cairo', sans-serif;
+    margin-bottom: 20px;
+}
+footer .footer_info .phone p{
+    display: inline-block;
+    color: rgba(156, 156, 156, 0.89);
+    direction:ltr
+}
+footer .footer_info .email{
+    margin-top:15px ;
+    margin-bottom:15px ;
+}
+footer .footer_info .email p{
+    display: inline-block;
+    color: rgba(179, 179, 179, 0.89);
+
+}
+footer .footer_info .social_icons{
+    margin-top:30px ;
+    margin-bottom:30px ;
+}
+footer .footer_info .social_icons i{
+    /* font-size: 35px; */
+    font-size: 55px;
+    transition:all .3s ease-in-out
+}
+footer .footer_info .social_icons a:first-child i:hover{
+    color:#0088cc !important;
+    transform:scale(1.3)
+}
+footer .footer_info .social_icons a:last-of-type i:hover{
+    color:#0f0 !important;
+    transform:scale(1.3)
+}
+/* footer .footer_info .social_icons a i:last-of-type:hover{
+    color:#0f0 !important;
+    transform:scale(1.3)
+} */
+footer .quick_links{
+    padding-right: 30px;
+}
+footer .quick_links h3{
+    font-family: 'Cairo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 42px;
+    color: #FFFFFF;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    direction: rtl;
+}
+footer .quick_links a{
+    display: block;
+    font-family: 'Cairo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 42px;
+    color: #9C9C9C;
+    direction: rtl;
+    padding: 10px 0;
+    transition: all .5s ease-in-out;
+}
+footer .quick_links a:hover{
+    font-size: 20px;
+    color:#fff;
+    padding-right: 8px;
+}
+
+
+/*--------media queries----------*/
+@media(max-width:750px){
+    footer{
+        text-align:center;
+    }
+    footer .quick_links{
+        padding-right:unset !important
+    }
+    footer .footer_info img{
+        margin:auto;
+        width:65% !important;
+    }
+    footer p{
+        padding:10px 20px
+    }
+}
+/*=================== End Footer ===================*/
+
+
+/*=================== Start Media Query ===================*/
+@media(max-width:700px){
+    .header .imgs .shape1{
+        left: 83%;
+        top: 20%;
+    }
+    .header .imgs .shape2{
+        left: 83%;
+        top: 68%;
+    }
+    .header .imgs .shape3{
+        left: 8%;
+        top: 17%;
+    }
+    .header .imgs .shape4{
+        
+    left: 8%;
+    top: 80%;
+
+    }
+    .header .imgs .shape5{
+        left: 44%;
+        top: 68%;
+    }
+    .navbar .logo img{
+        width: 80px;
+    }
+    .section-first .about_content .under_line{
+        display: none;
+    }
+    .section-first .about_image .statistics{
+        top: 15%;
+        right: 5%;
+        left: unset;
+        width: 120px;
+        height: 120px;
+    }
+    .section-first .about_image{
+        padding: 10px 0px !important;
+    }
+    .section-first .about_image .statistics div{
+        padding-top: 23px;
+    }
+    .section-first .about_content{
+        padding: 10px 0px !important;
+        padding-right:unset;
+    }
+    .section-first .about_image img{
+        margin-bottom: 0px !important;
+    }
+    .section-first .about_content h3{
+        font-size: 22px;
+    }
+    .section-first .about_content .about_items p{
+        padding-right: 0px !important;
+        font-weight: 400;
+        font-size: 17px;
+    }
+    .services .overlay .service_item .desc{
+        font-size: 15px;
+        padding: 5px 0;
+    }
+}
+
+/*=================== Start Media Query ===================*/

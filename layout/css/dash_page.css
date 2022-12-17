@@ -1,0 +1,56 @@
+.charts{
+    width: 90% !important;margin:30px auto;
+    font-family: 'Cairo', sans-serif !important;
+}
+.charts_circle{
+    width: 70% !important;margin:30px auto;
+    font-family: 'Cairo', sans-serif !important;
+}
+.charts_container{
+    border: 1px solid #efefef;
+    border-radius: 15px;
+    box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 0.03);
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+body{
+    font-family: 'Cairo', sans-serif !important;
+}
+h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Cairo', sans-serif !important;
+}
+.header_cards .items{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.header_cards .items .left img{
+    width: 65% !important;
+}
+.header_cards .items .right{
+    border-left: 2px solid #666;
+    text-align: center;
+}
+.header_cards .items .right h3{
+    color: #323a46!important;
+    font-family: 'Cairo', sans-serif !important;
+    font-weight: 600;
+    font-size: 30px !important;
+
+}
+.header_cards .items .right p{
+    color: #98a6ad!important;
+    font-family: 'Cairo', sans-serif !important;
+    font-size: 17px;
+
+}
+
+#map {
+    width:100%;
+    height: 500px;
+    margin: auto;
+    border-radius: 25px;
+    }

@@ -1,0 +1,494 @@
+:root {
+    --main_color: #E30813;
+    --white_color: #fff;
+    --black_color: #000;
+    --font_cairo: "Cairo", sans-serif;
+  }
+  body{
+    font-family: var(--font_cairo);
+    
+  }
+  /******************* Start main Global ********************/
+  a {
+    text-decoration: none;
+    color: var(--black_color);
+    transition: color 0.3s;
+    
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+  p{line-height: 1.8;}
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  small,
+  span,
+  li {
+    
+    margin-bottom: 0;
+  }
+  small {
+    color: var(--white_color);
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+  }
+  i {
+    color: var(--white_color);
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+  }
+  .fa-times{
+    font-size: 20px;
+    color: var(--white_color);
+  }
+  ul li:hover {
+    color: #e94364 !important;
+    cursor: pointer;
+  }
+  ul .active {
+    color: #e94364 !important;
+    cursor: pointer;
+  }
+  .form-control:focus,
+  button:focus {
+  box-shadow: 0 0 0 0.25rem rgb(236 82 82 / 25%) !important;
+  border-color: var(--main_color) !important;
+  }
+  ::selection{
+  background-color: var(--main_color);
+  color: var(--white_color);
+  }
+  body::-webkit-scrollbar,
+  .offcanvas-body::-webkit-scrollbar,
+  .modal::-webkit-scrollbar {
+  width: 0.8rem;
+  }
+  body::-webkit-scrollbar-track,
+  .offcanvas-body::-webkit-scrollbar-track,
+  .modal::-webkit-scrollbar-track  {
+  background: rgb(250, 207, 207);
+  }
+  body::-webkit-scrollbar-thumb,
+  .offcanvas-body::-webkit-scrollbar-thumb,
+  .modal::-webkit-scrollbar-thumb {
+  background-color: var(--main_color);
+  border-radius: 20px;
+  border: 5px solid #c6146a31;
+  }
+  /******************* End main Global ********************/
+  /* For Loading */
+  .loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(var(--main_color)),
+    to(#c61469)
+  ) !important;
+  background: linear-gradient(to top right, #ff264d, #c61469) !important;
+  z-index: 999999999999999;
+  display: flex;  
+  }
+  .loading img{
+  width: 75px;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  
+  @keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+  }
+  
+  /*End For Loading */
+  /* Start Logo */
+  .logo{
+  position: relative;
+  background-image: var(--white_color);
+  z-index: 100;
+  border-bottom: 1px solid #cccccc4d;
+  }
+  .logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .logo img {
+  width: 45px;
+  margin-left: 0.5rem;
+  }
+  @media(max-width:775px){
+    .logo img {
+      width: 20% !important;
+      }
+  }
+  @media(max-width:450px){
+    .logo img {
+      width: 30% !important;
+      }
+  }
+  .logo h3 {
+  font-size: 1rem;
+  margin-bottom: 2px !important;
+  font-weight: bold;
+  color: var(--main_color);
+  }
+  .logo small{
+  color: var(--main_color);
+  font-size: small;
+  }
+  /* End Logo */
+  
+  /******************************** Start DashHistory Navbar ********************************/
+  .dashHistory-navbar{
+  background-color: var(--white_color);
+  }
+  
+  .dashHistory-navbar nav ul li a{
+    color: var(--black_color);
+    transition: color 0.3s;
+  }
+  .dashHistory-navbar nav li:hover a,
+  .dashHistory-navbar nav li:hover i{
+  color: var(--main_color) !important;
+  }
+  .dashHistory-navbar nav .fa-bars {
+    color: var(--black_color);
+    font-size: 18px;
+    transition: color 0.3s;
+    padding-left: 20px;
+  }
+  .dashHistory-navbar nav .bars:hover {
+    color: var(--main_color);
+  }
+  .links_active{
+  color: var(--main_color) !important;
+  }
+  .clone_links_active{
+  color: var(--main_color) !important;
+  }
+  /* For Clone Navbar */
+  #main-nav{
+  position: absolute;
+  width: 100%;
+  background-color: var(--white_color);
+  z-index: 99;
+  }
+  #nav-clone{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white_color);
+  -webkit-transform: translateY(-129.7px);
+  transform: translateY(-129.7px);
+  transition: all 0.4s;
+  z-index: 98;
+  }
+  #nav-clone.is-active {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  top: 0;
+  left: 0;
+  }
+  #nav-clone a{
+  color: var(--black_color);
+  transition: color 0.3s;
+  }
+  #nav-clone i{
+  color: var(--black_color);
+  }
+  #nav-clone li:hover a,
+  #nav-clone li:hover i{
+  color: var(--main_color) !important;
+  }
+  #nav-clone .fa-bars {
+  color: var(--black_color);
+  font-size: 18px;
+  transition: color 0.3s;
+  }
+  #nav-clone .bars:hover {
+  color: var(--main_color);
+  }
+  /* End For Clone Navbar */
+  .drop,#select_gov,#gov,#select_city,#city,#select_gender,#bloodType{
+  direction: rtl!important;
+    width: 100%!important;
+    padding: 3px!important;
+    border: 0!important;
+    box-shadow: 0px 0px 0px 2px #d2d7dd!important;
+    border-radius: 3px!important;
+    color: #8b8e92!important;
+  
+  }
+  /* Start offcanvas  */
+  .offcanvas-top .offcanvas-header .logo{
+  border-bottom:none !important;
+  }
+  .offcanvas-top .offcanvas-header .logo h3 {
+  color: var(--main_color);
+  font-size: 1rem;
+  }
+  .offcanvas-top .offcanvas-header .logo img {
+  width: 35px;
+  }
+  .offcanvas-top .offcanvas-header i {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main_color);
+  }
+  .offcanvas-top .offcanvas-body{
+  direction: rtl;
+  }
+  .offcanvas-top .offcanvas-body .canv_links a {
+  display: block;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: var(--black_color);
+  }
+  .offcanvas-top .offcanvas-body .canv_links i {
+  color: var(--main_color);
+  }
+  /* End */
+  /******************************** End DashHistory Navbar ********************************/
+  
+
+  /*=================== Start payments ===================*/
+.payments{
+    background-image: url("../../img/water2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+    padding-bottom: 50px;
+  }
+.payments .payments_header{
+    font-weight: 700;
+    font-size: 43px;
+    text-align: center;
+    margin-top: 45px;
+    color: #E20813;
+    font-family: 'Cairo', sans-serif;
+}
+.payments .header_desc{
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    direction: rtl;
+    color: #999;
+    font-family: 'Cairo', sans-serif;
+}
+.payments .payment_item{
+    border: 1px solid rgba(156, 156, 156, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+    direction: rtl;
+}
+.payments .payment_item .video_img{
+    width: 100%;
+}
+.payments .payment_item .video_name{
+    font-weight: 700;
+    font-size: 35px;
+    color:#000;
+    padding: 20px 0;
+    padding-right: 15px;
+    font-family: 'Cairo', sans-serif;
+}
+.payments .payment_item .doctor_name{
+    font-weight: 700;
+    font-size: 18px;
+    color:rgba(51, 51, 51, 0.65);
+    font-family: 'Cairo', sans-serif;
+    padding: 10px 0;
+    padding-right: 15px;
+}
+.payments .payment_item .payment_statues{
+    font-weight: 700;
+    font-size: 24.0039px;
+    color:#333;
+    font-family: 'Cairo', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.payments .payment_item .payment_time{
+    padding: 30px 0;
+}
+.payments .payment_item .payment_time img{
+    display: inline-block;
+    margin-top: -4px;
+    
+}
+.payments .payment_item .payment_time p{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    color:#000;
+    padding-right: 0px;
+    margin-top: -5px;
+    font-family: 'Cairo', sans-serif;
+}
+.payments .payment_item .fawry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payments .payment_item .fawry img{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+  /*=================== End payments ===================*/
+  
+  
+  /*=================== Start Footer ===================*/
+  footer{
+    background-color: #000;
+  }
+  footer .overlay{
+    height: 100%;
+    width: 100%;
+    background-image: url("../../img/water2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  footer .footer_info{
+    direction: rtl;
+  }
+  footer .footer_info img{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+  }
+  footer .footer_info h3{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #F8F7F7;
+    font-family: 'Cairo', sans-serif;
+    margin-bottom: 20px;
+  }
+  footer .footer_info .phone p{
+    display: inline-block;
+    color: rgba(156, 156, 156, 0.89);
+    direction:ltr
+  }
+  footer .footer_info .email{
+    margin-top:15px ;
+    margin-bottom:15px ;
+  }
+  footer .footer_info .email p{
+    display: inline-block;
+    color: rgba(179, 179, 179, 0.89);
+  
+  }
+  footer .footer_info .social_icons{
+    margin-top:30px ;
+    margin-bottom:30px ;
+}
+footer .footer_info .social_icons i{
+    /* font-size: 35px; */
+    font-size: 55px;
+    transition:all .3s ease-in-out
+}
+footer .footer_info .social_icons a:first-child i:hover{
+    color:#0088cc !important;
+    transform:scale(1.3)
+}
+footer .footer_info .social_icons a:last-of-type i:hover{
+    color:#0f0 !important;
+    transform:scale(1.3)
+}
+/* footer .footer_info .social_icons a i:last-of-type:hover{
+    color:#0f0 !important;
+    transform:scale(1.3)
+} */
+  footer .quick_links{
+    padding-right: 30px;
+  }
+  footer .quick_links h3{
+    font-family: 'Cairo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 42px;
+    color: #FFFFFF;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    direction: rtl;
+  }
+  footer .quick_links a{
+    display: block;
+    font-family: 'Cairo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 42px;
+    color: #9C9C9C;
+    direction: rtl;
+    padding: 10px 0;
+    transition: all .5s ease-in-out;
+  }
+  footer .quick_links a:hover{
+    font-size: 20px;
+    color:#fff;
+    padding-right: 8px;
+  }
+  
+  
+  /*--------media queries----------*/
+  @media(max-width:750px){
+    footer{
+        text-align:center;
+    }
+    footer .quick_links{
+        padding-right:unset !important
+    }
+    footer .footer_info img{
+        margin:auto;
+        width:65% !important;
+    }
+    footer p{
+        padding:10px 20px
+    }
+  }
+  /*=================== End Footer ===================*/
+  
+  

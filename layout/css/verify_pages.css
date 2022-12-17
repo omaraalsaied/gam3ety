@@ -1,0 +1,24 @@
+body{
+    font-family: 'Cairo', sans-serif !important;
+}
+.check_img{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 55% !important;
+}
+.message{
+    text-align:center;
+    font-size: 25px;
+    color:#333;
+    font-family: 'Cairo', sans-serif;
+
+}
+.btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Cairo', sans-serif;
+}.btns button{
+    font-family: 'Cairo', sans-serif;
+}
